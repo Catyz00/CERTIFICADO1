@@ -1,0 +1,97 @@
+:root {
+    --color1: white;
+    --color2: #8494C2;
+    --color3: #45588F;
+    --color4: #E1E6F5;
+    --color5: #1A2B5C;
+    --color6: #041133;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--color5);
+  color: var(--color1);
+  font-family: Tahoma;
+  font-size: 16px;
+}
+  
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  background: var(--color3);
+  width: 25vw;
+  margin: 0 auto;
+  padding-bottom: 2px;
+  padding: 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0px 20px var(--color6);
+}
+
+label, legend {
+  display: block;
+  margin-top: 0.5em;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.400rem 0.380rem;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 0.380rem 0.380rem;
+    height: 2.380rem;
+  }
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.380rem 0.380rem;
+  height: 2.380rem;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 0.380rem 0.380rem;
+  height: 2.380rem;
+}
+
+input, textarea {
+  background-color: var(--color4);
+  border-radius: 5px;
+}
+
+input[type="checkbox"]{
+  cursor: pointer;
+}
+
+input[type="radio"]{
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: var(--color6);
+  border-color: var(--color3);
+  color: var(--color1);
+  min-width: 300px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0px 5px var(--color6)
+}
+
+input[type="submit"]:hover {
+  background-color: var(--color2);
+}
+
+input[type="submit"]:active {
+  background-color: var(--color5);
+}

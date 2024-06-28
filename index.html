@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulário final</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Formulário final</h1>
+    <p id="description">Com este formulário farei algumas perguntas para te conhecer melhor!</p>
+    <form id="survey-form">
+      <label id="name-label" for="text">Nome: <input id="name" type="text" placeholder="Coloque o seu nome" required/></label>
+      <label id="email-label" for="text">Email: <input id="email" type="email" placeholder="Coloque o seu email" required/></label>
+      <label id="number-label" for="number">Idade: <input type="number" name="idade" id="number" min="15" max="100" placeholder="Idade" class="form-control" required/></label>
+      <label>Qual opção melhor descreve sua função atual? </label>
+      <select id="dropdown" required>
+        <option value="">(selecione)</option>
+        <option value="1">Estudante</option>
+        <option value="2">Trabalho em tempo integral</option>
+        <option value="3">Aluno em tempo integral</option>
+        <option value="4">Prefere não dizer</option>
+        <option value="5">Outro</option>
+      </select>
+      <legend>Você mora em São Paulo?</legend>
+      <label for="sim"><input value="Sim" type="radio" name="user-recomend" class="input-radio" checked required/> Sim</label>
+      <label for="não"><input value="Não" type="radio" name="user-recomend" class="input-radio" required/> Não</label>
+      <legend>O que você faz no seu tempo livre?</legend>
+      <label for="assitir"><input name="assitir" value="assitir" type="checkbox" class="checkbox"/> Assisto filme/séries</label>
+      <label for="ler"><input name="ler" value="ler" type="checkbox" class="checkbox"/> Leio livros</label>
+      <label for="jogo"><input name="jogo" value="jogo" type="checkbox" class="checkbox"/> Jogo online</label>
+      <label for="sair"><input name="sair" value="sair" type="checkbox" class="checkbox"/> Saio com amigos/família</label>
+      <label for="outros"><input name="outros" value="outros" type="checkbox" class="checkbox"/> Outros</label>
+      <label for="opiniao">Nos dê sua opinião sobre este formulário: <textarea id="opiniao" name="opiniao" rows="3" cols="30" placeholder="Bom, ruim, precisa melhorar..." required></textarea>
+      </label>
+      <input id="submit" type="submit" value="Enivar"/>
+    </form>
+  </body>
+</html>
